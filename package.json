@@ -1,0 +1,25 @@
+{
+  "name": "web-app",
+  "version": "0.0.1",
+  "description": "Walking through how to deploy a fullstack web application using NodeJS and React",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "client": "cd client && npm start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run client\" \"npm run server\""
+  },
+  "keywords": [
+    "Web",
+    "App"
+  ],
+  "author": "Ronald Mutegeki",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
